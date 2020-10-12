@@ -1,5 +1,5 @@
 <template lang="pug">
-.pageBase
+.pageBase.home
   .logoWithDesc
     .logo
       .logoCircle
@@ -8,9 +8,12 @@
         .logoTitle DUODUO
         .logoSubTitle DESIGN
     .desc
+      .descItem Provide:
       .descItem Character Design
       .descItem Front-end Developer
       .descItem App Developer
+  .others
+    .mail Email:duoduo.design.company@gmail.com
 </template>
 
 <script>
@@ -33,7 +36,13 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   // background-color: blue;
+}
+
+.others{
+position: absolute;
+bottom: 20px;
 }
 
 .logoWithDesc{
